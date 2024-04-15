@@ -32,7 +32,10 @@ class Stack:
             return False
 
     def search(self, target):
-        # if target in self.items:
-        index = self.items.index(target)
-        dist_top = len(self.items) - (index +1)
-        return dist_top
+        if target in self.items:
+            index = self.items.index(target)
+            dist_top = len(self.items) - (index +1)
+            return dist_top
+        else:
+            return -1
+        # raise ValueError(f"{target} is not in list")

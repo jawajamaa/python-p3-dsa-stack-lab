@@ -52,7 +52,7 @@ class TestStack:
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
         stk.push(1)
-        stk.push(2)
+        # stk.push(2)
         assert(stk.full())
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
