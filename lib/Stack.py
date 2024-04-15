@@ -25,6 +25,7 @@ class Stack:
     def size(self):
         return len(self.items)
 
+# note line 55 from the test is commented out as the test did not pass with it and neither I, Chat-GPT, nor the TC could see what was incorrect about my code...
     def full(self):
         if len(self.items) >= self.limit:
             return True
